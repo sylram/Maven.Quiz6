@@ -18,7 +18,16 @@ public class PowerSet<TypeOfSet> {
      * @return the powerset of `originalSet`
      */
     public Set<Set<TypeOfSet>> permute() {
-        return null;
+        Set<Set<TypeOfSet>> sets = new HashSet<>();
+        Set<TypeOfSet> set;
+        Integer number = (int) Math.pow(2,originalSet.size());
+        for (int i = 0; i <number ; i++) {
+            for (int j = 0; j <originalSet.size() ; j++) {
+                set = new HashSet<>();
+//                set.add(originalSet[i])
+            }
+        }
+        return sets;
     }
 
     /**
